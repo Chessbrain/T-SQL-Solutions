@@ -2,7 +2,7 @@
 -- If arrays exist in the source data, keep in mind this query does not split the arrays into separate rows on input.
 
 BULK INSERT T
-FROM 'C:\Users\Chessbrain\Desktop\Database Folder\IMDB DB DUMP\title.crew.tsv\data.tsv'
+FROM 'FilePath'
 WITH (
 	FIRSTROW = 2, -- Exclude this if your data does not have a header.
 	ROWTERMINATOR = '0x0a'
